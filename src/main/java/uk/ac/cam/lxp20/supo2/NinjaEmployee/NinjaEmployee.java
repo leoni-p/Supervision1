@@ -2,6 +2,7 @@ package uk.ac.cam.lxp20.supo2.NinjaEmployee;
 
 public class NinjaEmployee extends Employee implements NinjaInterface {
     Ninja ninja;
+    int skillLevel = ninja.skillLevel;
 
     public Ninja constructNinja(String name) {
         return new Ninja(name);
@@ -24,6 +25,7 @@ public class NinjaEmployee extends Employee implements NinjaInterface {
         System.out.println("I'm a ninja employee");
         salary ++;
         ninja.increaseSkillLevel();
+        skillLevel++;
     }
 
     public String getName() {
